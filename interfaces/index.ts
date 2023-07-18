@@ -9,3 +9,7 @@ export interface ICategory {
 	items: Array<INominee>;
 	title: string;
 }
+
+export interface IContext {
+	selectedNominee: INominee | null;
+}

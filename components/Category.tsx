@@ -9,7 +9,7 @@ type Props = {
 
 function Category({ title, items }: Props) {
 	return (
-		<div>
+		<div className={styles.category}>
 			<h1 className={styles.categoryTitle}>{title}</h1>
 			<div className={styles.nominees}>
 				{items.map((item: INominee, index: number): JSX.Element => {

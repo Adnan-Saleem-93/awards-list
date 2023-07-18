@@ -5,7 +5,9 @@
 }
 
 .categoryTitle {
-	background-color: #288074;
+	margin: 2rem 0;
+	background-color: #1e645d;
+	color: #ffffffcc;
 	width: 100%;
 	padding: 0.5rem 1rem;
 	border-radius: 4px;
@@ -22,6 +24,9 @@
 	border: 2px solid #54ecd8;
 	border-radius: 0.5rem;
 }
+.singleNominee:hover {
+	background-color: #34ac9c;
+}
 
 .nomineeTitle {
 	margin: 0 0 1rem 0;
@@ -32,12 +37,11 @@
 .selectButton {
 	padding: 1rem;
 	margin: 0 auto;
-	background-color: #23d5be !important;
+	background-color: #137266 !important;
 	border-radius: 0.5rem;
-	color: #000;
+	color: #fff;
 	cursor: pointer;
 }
-
 .selectButton:hover {
 	transform: scale(1.1);
 }
