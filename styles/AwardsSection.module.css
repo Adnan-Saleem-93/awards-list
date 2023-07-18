@@ -1,0 +1,43 @@
+.nominees {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 2rem;
+}
+
+.categoryTitle {
+	background-color: #288074;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+}
+
+.singleNominee {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 20rem;
+	background-color: #009b86;
+	border: 2px solid #54ecd8;
+	border-radius: 0.5rem;
+}
+
+.nomineeTitle {
+	margin: 0 0 1rem 0;
+}
+.nomineeImage {
+	border-radius: 50%;
+}
+.selectButton {
+	padding: 1rem;
+	margin: 0 auto;
+	background-color: #23d5be !important;
+	border-radius: 0.5rem;
+	color: #000;
+	cursor: pointer;
+}
+
+.selectButton:hover {
+	transform: scale(1.1);
+}
