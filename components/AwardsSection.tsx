@@ -7,7 +7,11 @@ const AwardsSection = () => {
 	const [awards, setAwards] = useState<ICategory[] | []>([]);
 	const getAwards = async () => {
 		try {
-			const response = await fetch(`http://localhost:3000/api/ballots`);
+			let BASE_URL =
+				process.env.NODE_ENV === "development"
+					? "http://localhost:3000/api"
+					: "https://awards-list.netlify.app/api";
+			const response = await fetch(`${BASE_URL}/ballots`);
 			const result: { items: ICategory[] | [] } = await response.json();
 			const data: ICategory[] | [] = result?.items;
 
