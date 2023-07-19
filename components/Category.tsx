@@ -14,7 +14,7 @@ function Category({ id, title, items }: Props) {
 			<h1 className={styles.categoryTitle}>{title}</h1>
 			<div className={styles.nominees}>
 				{items.map((item: INominee, index: number): JSX.Element => {
-					return <Nominee key={index} category_id={id} {...item} />;
+					return <Nominee key={index} {...item} category_id={id} />;
 				})}
 			</div>
 		</div>
