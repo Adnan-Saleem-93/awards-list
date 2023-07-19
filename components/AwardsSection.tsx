@@ -21,7 +21,7 @@ const AwardsSection = () => {
 	}, []);
 
 	return (
-		<section>
+		<section style={{ width: "100%" }}>
 			{awards?.map((category: ICategory, index: number): JSX.Element => {
 				return <Category key={index} {...category} />;
 			})}

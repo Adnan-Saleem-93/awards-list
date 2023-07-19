@@ -1,4 +1,5 @@
 export interface INominee {
+	category_id:string;
 	id: string;
 	title: string;
 	photoUrL: string;
@@ -12,4 +13,9 @@ export interface ICategory {
 
 export interface IContext {
 	selectedNominee: INominee | null;
+}
+
+export interface ISelectedNominee{
+	category_id: string;
+	selectedNominee:INominee;
 }

@@ -11,3 +11,26 @@
 	margin: 0;
 	color: #ffffffdd;
 }
+
+.stickyButton {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.75rem;
+	text-transform: uppercase;
+	border: none;
+	padding: 1.75rem;
+	border-radius: 0.5rem;
+	background-color: orange;
+	cursor: pointer;
+}
+.stickyButton:hover {
+	background-color: rgb(223, 149, 11);
+}
+
+@media (max-width: 768px) {
+	.stickyButton {
+		padding: 1rem;
+		font-size: 1.5rem;
+	}
+}

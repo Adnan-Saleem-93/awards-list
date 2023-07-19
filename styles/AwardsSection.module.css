@@ -1,7 +1,7 @@
 .nominees {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 2rem;
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	grid-gap: 2rem;
 }
 
 .categoryTitle {
@@ -25,7 +25,7 @@
 	border-radius: 0.5rem;
 }
 .singleNominee:hover {
-	background-color: #34ac9c;
+	background-color: #017969 !important;
 }
 
 .nomineeTitle {
@@ -37,10 +37,21 @@
 .selectButton {
 	padding: 1rem;
 	margin: 0 auto;
-	background-color: #137266 !important;
 	border-radius: 0.5rem;
 	color: #fff;
 	cursor: pointer;
+}
+.selected {
+	background-color: #0ea15a !important;
+}
+.selected:hover {
+	transform: scale(1) !important;
+}
+.singleNominee:hover .non_selected {
+	background-color: #0ea08c !important;
+}
+.non_selected {
+	background-color: #017969 !important;
 }
 .selectButton:hover {
 	transform: scale(1.1);
